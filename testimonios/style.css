@@ -26,7 +26,6 @@ body{
     text-align: center;
     border-radius: 5px;
     transition: all .5s;
-    min-width:430px ;
 }
 
 .item::before{
@@ -107,9 +106,22 @@ body{
 @media (max-width:900px) {
     .grid-container{
         grid-template-columns: 1fr;
+        padding: 10px;
     }
     .item p{
         font-size: 14px;
     }
-    
+    .grid-container .item:nth-child(1){
+        margin-top: 80px;
+    }
+    .item::before{
+        height: 60px;
+        width: 60px;
+        right: 10px;
+    }
+    .item::after{
+        height: 60px;
+        width: 60px;
+        left: 10px;
+    }
 }
